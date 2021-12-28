@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<style>
+    .color-wrap .form-check {
+        display: inline-block;
+    }
+    
+    .color-wrap .form-check {
+        padding: 6px;
+        margin: 0;
+    }
+    
+    .color-wrap .form-check-input {
+        position: relative;
+        width: 22px;
+        height: 22px;
+        margin: 0;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    
+    .color-wrap .form-check:nth-child(1) .form-check-input {
+        background-color: #F9371C;
+    }
+    
+    .color-wrap .form-check:nth-child(2) .form-check-input {
+        background-color: #F97C1C;
+    }
+    
+    .color-wrap .form-check:nth-child(3) .form-check-input {
+        background-color: #F9C81C;
+    }
+    
+    .color-wrap .form-check:nth-child(4) .form-check-input {
+        background-color: #41D0B6;
+    }
+    
+    .color-wrap .form-check:nth-child(5) .form-check-input {
+        background-color: #2CADF6;
+    }
+    
+    .color-wrap .form-check:nth-child(6) .form-check-input {
+        background-color: #1A2F82;
+    }
+    
+    .color-wrap .form-check-input:checked[type=radio] {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='arcs' stroke-linejoin='arcs' stroke-width='2' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    }
+    
+    .color-wrap .form-check:nth-child(1) .form-check-input:checked[type=radio] {
+        box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F9371C;
+        -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F9371C;
+        -moz-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F9371C;
+    }
+    
+    .color-wrap .form-check:nth-child(2) .form-check-input:checked[type=radio] {
+        box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F97C1C;
+        -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F97C1C;
+        -moz-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F97C1C;
+    }
+    
+    .color-wrap .form-check:nth-child(3) .form-check-input:checked[type=radio] {
+        box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F9C81C;
+        -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F9C81C;
+        -moz-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #F9C81C;
+    }
+    
+    .color-wrap .form-check:nth-child(4) .form-check-input:checked[type=radio] {
+        box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #41D0B6;
+        -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #41D0B6;
+        -moz-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #41D0B6;
+    }
+    
+    .color-wrap .form-check:nth-child(5) .form-check-input:checked[type=radio] {
+        box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #2CADF6;
+        -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #2CADF6;
+        -moz-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #2CADF6;
+    }
+    
+    .color-wrap .form-check:nth-child(6) .form-check-input:checked[type=radio] {
+        box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #1A2F82;
+        -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #1A2F82;
+        -moz-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #1A2F82;
+    }
+</style>
+
+<body>
+
+    <div class="color-wrap">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="color1">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="color2">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="color3">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="color4" checked>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="color5">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="color" id="color6">
+        </div>
+    </div>
+
+</body>
+
+</html>

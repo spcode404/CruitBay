@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Verify OTP</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar login-nav fixed-top navbar-expand-lg navbar-light main-nav py-4">
+        <div class="container con1">
+            <a class="navbar-brand" href="./login.html"><img src="assets/images/logo_blue.png" alt="CruitBay Inc. Logo"></a>
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+    <!-- main start -->
+    <main>
+        <div class="container">
+            <section class="foegetPass-sec verifyOTP-sec form2 user-select-none row align-items-center">
+                <div class="col-xl-7 col-lg-6 col-md-11 shadow forgetPassImgSec">
+
+                    <h2 class="verifyOTP">Forget your Password?</h2>
+                    <img src="assets/images/forgot_password.png" alt="forgot_password" class="img-fluid d-sm-block d-none">
+
+                </div>
+                <div class="col-xl-5 col-lg-6 col-md-1 forget-form-wrap">
+                    <form action="./reset-password.html" class="shadow forget-form">
+                        <h2>Verify</h2>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Email ID</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="abcd@gmail.com" required>
+                            <div class="form-text">Email Address can not be left blank</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userOTP" class="form-label">Enter OTP</label>
+                            <input type="number" class="form-control" id="userOTP" placeholder="Enter OTP send to Email Address" required>
+                            <div class="form-text"></div>
+                        </div>
+                        <button type="submit" class="btn btn-gr w-100 text-center">Verify</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- main Ends -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

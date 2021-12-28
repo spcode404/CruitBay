@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Recruiter</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light login-nav">
+        <div class="container con2">
+            <a class="navbar-brand" href="./index.html"><img src="assets/images/logo_blue.png" alt="CruitBay Inc. Logo"></a>
+            <button class="navbar-toggler" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="rgb(24, 39, 122)"
+                    class="bi bi-filter-right" viewBox="0 0 16 16">
+                    <path
+                        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+                </svg>
+            </button>
+            <div class="backdrop"></div>
+            <div class="mx-auto justify-content-center" id="navbarMob">
+                <div id="closeNav" class="d-lg-none d-md-inline p-3 position-absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
+                            fill="#000" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item d-lg-none text-center my-5">
+                        <img src="assets/images/logo_blue.png" alt="CruitBay Inc. Logo">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./login.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recruiter-search.html">Search Candidate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+    <!-- main start -->
+    <main>
+        <section class="login-sec">
+            <div class="container con2">
+                <div class="row gy-5 gy-lg-0">
+                    <div class="col-lg-6 pt-3">
+                        <h4>Welcome</h4>
+                        <h3 class="ps-0">Get started with CruitBay Recruiment Solutions</h3>
+                        <div class="img-wrap">
+                            <img src="assets/images/recruiter_create_account.png" alt="recruiter_create_account" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="login-box shadow" id="registerForm">
+                            <h2>Create Account</h2>
+                            <p>or already registered ? <a href="./login.html">Login Now</a></p>
+                            <form action="#" method="post">
+                                <div class="my-5">
+                                    <input type="text" class="form-control" id="newCompName" placeholder="Company Name*" required>
+                                    <div class="form-text">Company Name can not be left blank</div>
+                                </div>
+                                <div class="my-5">
+                                    <input type="email" class="form-control" id="newUserEmail" placeholder="Email ID Address" required>
+                                    <div class="form-text error">Email ID can not be left blank</div>
+                                </div>
+                                <div class="my-5">
+                                    <input type="password" class="form-control" id="UserPass" placeholder="Enter a Password" required>
+                                    <div class="form-text">Password can not be left blank</div>
+                                </div>
+                                <div class="input-group my-5">
+                                    <span class="input-group-text" id="countryCode">
+                                        <input type="text" required>
+                                    </span>
+                                    <input type="tel" class="form-control ps-2" placeholder="Phone Number" aria-describedby="countryCode" required>
+                                    <div class="form-text"></div>
+                                </div>
+                                <div class="my-5 desc-check">
+                                    <div class="des-text">Select which best describes how you will be using CruitBay*</div>
+                                    <div class="form-check">
+                                        <input class="form-check-input d-none" type="radio" name="selectUsingType" id="business" checked>
+                                        <label class="form-check-label text-center w-100" for="business">
+                                            <span>Business</span>
+                                            <span>Searching for employees to hire</span>  
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input d-none" type="radio" name="selectUsingType" id="recruitmentAgency">
+                                        <label class="form-check-label text-center w-100" for="recruitmentAgency">
+                                            <span>Recruitment Agency</span>
+                                            <span>Searching for employees for your clients to hire</span>  
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-group my-4">
+                                    <select class="form-select" required>
+                                        <option value="" selected disabled>Select Industry</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                <div class="my-4">
+                                    <input type="text" class="form-control" id="userName" placeholder="Name">
+                                    <div class="form-text"></div>
+                                </div>
+                                <div class="my-4">
+                                    <input type="number" class="form-control" id="zip" placeholder="ZIP Code">
+                                    <div class="form-text"></div>
+                                </div>
+                                <div class="form-check user-select-none agreeWrap">
+                                    <div class="mb-3">
+                                        <input class="form-check-input" type="checkbox" id="promotional">
+                                        <label class="form-check-label" for="promotional">
+                                        I agree to receive Promotional Communication form CruitBay
+                                    </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-check-input" type="checkbox" id="terms">
+                                        <label class="form-check-label" for="terms">
+                                            I agree to <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a> 
+                                    </label>
+                                    </div>
+
+                                </div>
+                                <div class="my-3 p-0 form-check">
+                                    <!-- re captcha place here -->
+                                </div>
+                                <button type="submit" class="btn blueBtn w-100">Create Account</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main Ends -->
+    <!-- footer start -->
+    <footer class="footer py-5">
+        <div class="container con2">
+            <div class="row">
+                <div class="col-md-6 col-xl-4 align-self-center text-md-start text-center">
+                    <a href="./index.html" class="d-inline-block footer-brand">
+                        <img src="assets/images/logo_white.png" alt="CruitBay Inc. Logo">
+                        <p class="mb-0 mt-4 text-center">CRUITBAY</p>
+                    </a>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <h2 class="footer-heading">get in touch</h2>
+                    <ul class="conInfo">
+                        <li>
+                            <a href="#">US: +1 (123) 456 7890</a>
+                        </li>
+                        <li>
+                            <a href="#">EU: +45 (243) 456 4578</a>
+                        </li>
+                        <li>
+                            <a href="#">info@cruitbay.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <h2 class="footer-heading">connect on social</h2>
+                    <ul class="conSocial d-flex align-items-center justify-content-xl-center">
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/linkedin.png" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-r d-flex flex-wrap-reverse justify-content-md-between justify-content-center">
+                <div>All rights recived © 2021 CruitBay Inc.</div>
+                <ul class="d-flex tarmsWrap">
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Accesiblity</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

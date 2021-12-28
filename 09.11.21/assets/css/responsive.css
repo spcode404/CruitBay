@@ -1,0 +1,991 @@
+@media (max-width: 1550.98px) {
+    .top-header h1 {
+        font-size: 58px;
+        line-height: 80px;
+    }
+    .sec-heading,
+    .crt-acc-sec h2 {
+        font-size: 44px;
+        line-height: 67px;
+    }
+    .contectUs-sec {
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+    .btn.btn-custom,
+    .btn.btn-custom:hover,
+    .btn.btn-custom:focus {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-height:825px) {
+    .search-sec,
+    .foegetPass-sec {
+        height: calc(100vh - 144px) !important;
+    }
+}
+
+
+/* X-Large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {
+    /* ---------------- Home Page CSS ---------------- */
+    /* top-header section css */
+    .bg-img0 {
+        width: 80%;
+    }
+    .bg-img1 {
+        bottom: -110px;
+        width: 110px;
+    }
+    .top-header h1 {
+        font-size: 2.98rem;
+        line-height: 62px;
+    }
+    .p-cont,
+    .crt-acc-sec p {
+        font-size: 19px;
+    }
+    /* Companies-sec css */
+    .bg-img2 {
+        width: 180px;
+    }
+    .contect-down-wrep {
+        padding-right: 50px;
+    }
+    .sec-heading,
+    .crt-acc-sec h2 {
+        font-size: 37px;
+        line-height: 56px;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    /* ---------------- Home Page CSS ---------------- */
+    /* navbar css */
+    .navbar-light.main-nav .nav-link,
+    .navbar-light.main-nav .nav-link:hover,
+    .navbar-light.main-nav .nav-link:focus {
+        margin: 0 1.5rem;
+        font-size: 1.4rem;
+    }
+    .login-sec h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    /* top-header section css */
+    .top-header h1 {
+        font-size: 2.6rem;
+        line-height: 62px;
+    }
+    .sec-heading,
+    .crt-acc-sec h2 {
+        font-size: 2.1rem;
+        line-height: 54px;
+    }
+    /* footer-sec css */
+    .footer-sec h2 {
+        font-size: 3.4rem;
+    }
+    .social-icons>a {
+        width: 50px;
+        height: 50px;
+    }
+    .social-icons>a>i {
+        font-size: 1.2rem;
+        line-height: 50px;
+    }
+    /* ---------------- Recruiter Page CSS ---------------- */
+    .form-check.user-select-none label {
+        font-size: .775rem;
+    }
+    /* ---------------- Recruiter - Search Result Page CSS ---------------- */
+    .searchBox>button[type="submit"] {
+        font-size: 1.2rem;
+    }
+    .boostedCandidate {
+        user-select: none;
+        padding: 5px 20px;
+        right: 15px;
+        top: 15px;
+        font-size: .8rem;
+    }
+    .boostedCandidate>img {
+        width: 15px;
+        margin-right: .75px;
+    }
+    .candidateCard .candidateInfo h2 {
+        font-size: 1.725rem;
+        margin-bottom: 1rem;
+    }
+    .candidateCard ul>li {
+        font-size: 16px;
+    }
+    .candidateCard .candidateInfo ul {
+        margin-bottom: 1.5rem;
+    }
+    .work-status {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    }
+    .paginationNumbers .page-item:nth-child(n+8):nth-child(-n+11) {
+        display: none;
+    }
+    /* ---------------- Forget Password Page CSS ---------------- */
+    .forgetPassImgSec {
+        padding: 40px 30px 6px 35px;
+    }
+    .forget-form {
+        padding: 35px;
+    }
+    .form2 h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    .forgetPassImgSec h2 {
+        margin-bottom: 60px;
+    }
+    .msAgr>p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .subCards>div {
+        padding: 35px 25px;
+    }
+    .contect-up-wrep h1 {
+        font-size: 42px;
+        line-height: 66px;
+    }
+    .contect-up-wrep h3 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .contect-up-wrep h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .contect-down-wrep h3 {
+        font-size: 30px;
+        line-height: 48px;
+        margin-bottom: 25px;
+    }
+    .contect-down-wrep>ul>li>a,
+    .contect-down-wrep>ul>li {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .socialIcons {
+        padding: 35px 0;
+    }
+    .form3 .registerNewUser-form>h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    /* ---------------- Home Page CSS ---------------- */
+    /* navbar css */
+    .navbar-light.main-nav .nav-link,
+    .navbar-light.main-nav .nav-link:hover,
+    .navbar-light.main-nav .nav-link:focus {
+        margin: 0;
+        padding: 10px 30px;
+    }
+    #navbarMob {
+        position: fixed;
+        background-color: #fff;
+        width: 280px;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+        z-index: 9999;
+    }
+    #navbarMob.showNav {
+        transition: all 0.3s ease-in-out;
+        transform: translateX(0);
+    }
+    .navbar-light.main-nav .btn-blue,
+    .navbar-light.main-nav .btn-blue:focus,
+    .navbar-light.main-nav .btn-blue:hover {
+        text-align: center;
+        margin-top: 45px;
+        padding: .25rem;
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+    /* top-header section css */
+    .bg-img0 {
+        width: 505px;
+    }
+    main#home .g-5 {
+        --bs-gutter-x: 3rem;
+    }
+    /* footer-sec css */
+    .footer-wrap {
+        padding: 21% 0 15px;
+    }
+    /* ---------------- Recruiter Search Page CSS ---------------- */
+    .serchText h1 {
+        font-size: 2rem;
+    }
+    .serchText p {
+        font-size: 1.2rem;
+    }
+    /* ---------------- Recruiter - Search Result Page CSS ---------------- */
+    .searchResult-sec .filters-Wrap {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        border-radius: 0 !important;
+        max-width: 320px;
+        width: 100%;
+        box-shadow: none !important;
+        height: 100vh;
+        transform: translateX(-320px);
+        transition: all .3s ease-in-out;
+    }
+    .searchResult-sec .filters-Wrap.open {
+        transform: translateX(0);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+        transition: all .3s ease-in-out;
+    }
+    .searchResult-sec .filters-collapse {
+        height: calc(100vh - 64px);
+        overflow-y: scroll;
+    }
+    .work-status {
+        position: static;
+    }
+    .candidateCard .candidateImg>img {
+        width: 55px;
+        height: 55px;
+    }
+    .candidateCard .candidateInfo h2 {
+        font-size: 1.5rem;
+    }
+    .candidateCard ul>li {
+        font-size: 14px;
+    }
+    .paginationNumbers .page-link {
+        font-size: 1rem;
+    }
+    .paginationNumbers .page-item:nth-child(1)>.page-link::before,
+    .paginationNumbers .page-item:nth-last-child(1)>.page-link::after {
+        width: 15px;
+        height: 15px;
+    }
+    /* ---------------- Forget Password Page CSS ---------------- */
+    .forget-form {
+        top: auto;
+        left: -275%;
+        min-width: 400px;
+        transform: translateX(-65%);
+    }
+    .forgetPassImgSec h2 {
+        margin-bottom: 80px;
+    }
+    .form2 h2 {
+        font-size: 1.6rem;
+    }
+    .forgetPassImgSec img {
+        width: 77%;
+    }
+    /* ---------------- Verify OTP Page CSS ---------------- */
+    .form2 .verifyOTP {
+        margin-bottom: 140px;
+    }
+    /* ---------------- Register New User Page CSS ---------------- */
+    .form1 .form-label {
+        font-size: 1.1rem;
+    }
+    .form1 .form-check .form-check-input {
+        margin-top: 2px;
+    }
+    .form1 .form-check .form-check-label {
+        font-size: .9rem;
+    }
+    .form1 .terms .form-check-label {
+        padding-left: 10px;
+        display: inline;
+    }
+    label.et_pb_contact_form_label[for="uploadResume"]:after {
+        font-size: 1rem;
+        padding: 6px 35px;
+    }
+    .uploadWrap>.pd_text {
+        font-size: 1.2rem;
+        padding: 15px 48px;
+    }
+    .uploadWrap>.pd_text2 {
+        font-size: .8rem;
+    }
+    .file_names {
+        bottom: -18px;
+        font-size: 10px;
+    }
+    .msAgr>p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .sbPrice>h3 {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .sbPrice>h1 {
+        font-size: 38px;
+        line-height: 62px;
+    }
+    .subCards>div:nth-child(2) .sbPrice>h3 {
+        font-size: 26px;
+        line-height: 44px;
+    }
+    .subCards>div:nth-child(2) .sbPrice>h1 {
+        font-size: 42px;
+        line-height: 68px;
+    }
+    .sbPrice {
+        padding: 8px 25px;
+    }
+    .sbPrice>li {
+        font-size: 12px;
+        line-height: 21px;
+        padding-left: 30px;
+    }
+    .sbPrice>li::before,
+    .subCards>div:nth-child(2) .sbPrice>li::before {
+        width: 15px;
+        height: 15px;
+    }
+    .btn-ltBlue {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .subCards {
+        padding: 0;
+    }
+    .contectUs-sec {
+        height: auto;
+        padding: 50px 0;
+    }
+    .form3 .registerNewUser-form>h2 {
+        font-size: 22px;
+    }
+    /* ---------------- Payment Section Page css Start ---------------- */
+    .form4 .form-check-label>span:nth-child(2)>svg {
+        width: 160px;
+        height: 32px;
+    }
+    .form4 .check-wrap2 .form-check-label>span:nth-child(2)>svg {
+        width: 90px;
+    }
+    .form4 .check-wrap1,
+    .form4 .check-wrap2 {
+        height: 90px;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    /* ---------------- Home Page CSS ---------------- */
+    /* navbar css */
+    .navbar-brand>img {
+        height: 60px;
+    }
+    /* top-header section css */
+    .bg-img0 {
+        width: 514px;
+    }
+    .top-header h1 {
+        font-size: 2.1rem;
+        line-height: 46px;
+    }
+    .sec-heading,
+    .crt-acc-sec h2 {
+        font-size: 1.9rem;
+        line-height: 48px;
+    }
+    .p-cont,
+    .crt-acc-sec p {
+        padding: 10px 0;
+    }
+    .btn.btn-custom,
+    .btn.btn-custom:hover,
+    .btn.btn-custom:focus {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+    /* footer-sec css */
+    .footer-sec {
+        background-size: 110% 100%;
+    }
+    .footer-wrap {
+        padding: 25% 0 15px;
+    }
+    .social-icons {
+        margin: 30px 0;
+    }
+    .copyright {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    /* ---------------- login Page CSS ---------------- */
+    .login-sec {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .login-sec h3 {
+        font-size: 1.6rem;
+        padding: 0;
+    }
+    .login-box {
+        padding: 30px 20px;
+    }
+    .login-box h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .footer-heading {
+        padding-top: 2rem;
+        margin-bottom: 2.2rem;
+        font-size: 1.9rem;
+    }
+    .conSocial {
+        padding: 0px;
+        padding-left: 17px;
+    }
+    .tarmsWrap {
+        padding: 0;
+    }
+    .tarmsWrap>li>a,
+    .tarmsWrap>li>a:hover {
+        padding: 0 15px;
+        margin-left: 0;
+        color: #8d8e9e;
+    }
+    /* ---------------- Recruiter Search Page CSS ---------------- */
+    .search-sec .btn.blueBtn {
+        font-size: 1.2rem;
+        padding: 0.7rem 4.2rem;
+    }
+    .serchText h1 {
+        font-size: 1.5rem;
+    }
+    .serchText p {
+        font-size: 1rem;
+    }
+    /* ---------------- Recruiter - Search Result Page CSS ---------------- */
+    .searchResult-sec .searchBox>input[type="submit"] {
+        font-size: 1rem;
+    }
+    .searchResult-sec .searchBox .input-group-text {
+        padding: 14px 10px 14px 14px;
+    }
+    .searchResult-sec .searchBox .input-group-text>img {
+        width: 18px;
+    }
+    .work-status {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    }
+    .paginationNumbers .page-link {
+        font-size: .9rem;
+        padding: .375rem .9rem;
+    }
+    .paginationNumbers .page-item:nth-child(n+7):nth-child(-n+11) {
+        display: none;
+    }
+    /* ---------------- Forget Password Page CSS ---------------- */
+    .forget-form {
+        top: 0;
+        left: 0;
+        min-width: 400px;
+        transform: translate(0, -200%);
+    }
+    .forgetPassImgSec img {
+        width: 100%;
+    }
+    .forgetPassImgSec h2,
+    .form2 .verifyOTP {
+        margin-bottom: 335px;
+    }
+    .forgetPassImgSec {
+        padding: 40px 30px 6px 35px;
+        box-shadow: none !important;
+        background-color: #f7f9fd;
+    }
+    .forget-form-wrap {
+        height: 30px;
+    }
+    /* ---------------- Verify OTP Page CSS ---------------- */
+    .verifyOTP-sec .forget-form {
+        transform: translate(0, -165%);
+    }
+    /* ---------------- Register New User Page CSS ---------------- */
+    .form1 .form-step-wrap {
+        font-size: 1rem;
+    }
+    .form1 .form-step-wrap .stapNum.active {
+        width: 235px;
+    }
+    .form1 .form-check {
+        padding-left: 3rem;
+        margin: .35rem 0;
+    }
+    .form1 .terms .form-check-label {
+        font-size: .865rem;
+    }
+    .uploadWrap {
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    label.et_pb_contact_form_label[for="uploadResume"]:after {
+        font-size: 1rem;
+        padding: 6px 35px;
+    }
+    .uploadWrap>.pd_text {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .uploadWrap>.pd_text2 {
+        font-size: .8rem;
+    }
+    .msAgr>p {
+        font-size: 12px;
+        line-height: 20px;
+        color: #000;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    .subCards>div:nth-child(2) {
+        transform: scale(1.1);
+    }
+    .imgWrap {
+        width: 175px;
+        height: 175px;
+    }
+    .textWrep {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .profile-nav .rounded-circle {
+        width: 60px;
+    }
+    .profile-nav .notifaction_bell {
+        width: 26px;
+    }
+    /* ---------------- Register Options Page CSS ---------------- */
+    .form3 .btn-gr2 {
+        font-size: 1.2rem;
+    }
+    .form3 .btn-signUp {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /* ---------------- Payment Section Page css Start ---------------- */
+    .form4 .form-check {
+        padding-left: 1.5em;
+    }
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 1rem 0 !important;
+    }
+    main {
+        padding-top: 104px;
+    }
+    .nav-colored {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    /* ---------------- Home Page CSS ---------------- */
+    /* main section css */
+    main#home section {
+        padding: 125px 0 75px;
+    }
+    /* top-header section css */
+    .bg-img1 {
+        bottom: -80px;
+        width: 80px;
+    }
+    .top-header h1 {
+        font-size: 1.88rem;
+        line-height: 40px;
+    }
+    .p-cont,
+    .crt-acc-sec p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .btn.btn-custom,
+    .btn.btn-custom:hover,
+    .btn.btn-custom:focus {
+        font-size: 1rem;
+    }
+    .sec-heading,
+    .crt-acc-sec h2 {
+        line-height: 38px;
+        font-size: 1.8rem;
+    }
+    .bg-img2 {
+        width: 125px;
+        top: -60px;
+    }
+    /* footer-sec css */
+    .footer-sec {
+        background-size: 150% 100%;
+        background-position: bottom right;
+    }
+    .footer-wrap {
+        padding: 40% 0 15px;
+    }
+    .footer-sec h2 {
+        font-size: 2.4rem;
+    }
+    .social-icons {
+        margin: 10px 0;
+    }
+    .social-icons>a {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+    .social-icons>a>i {
+        font-size: 1rem;
+        line-height: 40px;
+    }
+    /* ---------------- Recruiter Page CSS ---------------- */
+    .des-text {
+        font-size: .785rem;
+    }
+    .desc-check .form-check-label>span:nth-child(1) {
+        font-size: 1rem;
+    }
+    .desc-check .form-check-label>span:nth-child(2) {
+        font-size: .75rem;
+    }
+    .form-check.user-select-none label {
+        font-size: 11px;
+    }
+    /* ---------------- Recruiter Search Page CSS ---------------- */
+    .searchBox .input-group-text {
+        padding: 14px 10px 14px 14px;
+    }
+    .search-sec .btn.blueBtn {
+        font-size: 1rem;
+        padding: 0.7rem 3.775rem;
+    }
+    .serchText h1 {
+        font-size: 1rem;
+    }
+    .serchText p {
+        font-size: .65rem;
+    }
+    .searchResult-sec .filters-Wrap {
+        max-width: 290px;
+        transform: translateX(-290px);
+    }
+    /* ---------------- Recruiter - Search Result Page CSS ---------------- */
+    .searchResult-sec .searchBox>input[type="submit"] {
+        font-size: .8rem;
+        padding: 0 1.2rem !important;
+        max-width: 84px;
+        width: 100%;
+    }
+    .searchResult-sec .searchBox .input-group-text {
+        padding: 12px 0px 12px 12px;
+    }
+    .searchResult-sec .searchBox .input-group-text>img {
+        width: 16px;
+    }
+    .candidateCard .candidateInfo h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.65rem;
+        margin-top: .3rem;
+    }
+    .candidateCard .candidateInfo ul {
+        margin-bottom: 0.65rem;
+    }
+    .candidateCard ul>li {
+        font-size: 12px;
+    }
+    .work-status {
+        font-size: 9px;
+        max-width: 154px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .paginationNumbers .page-link {
+        font-size: .8rem;
+        padding: .375rem .8rem;
+    }
+    .paginationNumbers .page-item:nth-child(1)>.page-link::before,
+    .paginationNumbers .page-item:nth-last-child(1)>.page-link::after {
+        width: 13px;
+        height: 13px;
+    }
+    .paginationNumbers .page-item:nth-last-child(1)>.page-link::after {
+        transform: translateY(-45%);
+    }
+    .paginationNumbers .page-item:nth-last-child(1)>.page-link {
+        padding-right: 2rem;
+    }
+    .paginationNumbers .page-item:nth-child(1)>.page-link {
+        padding-left: 2rem;
+    }
+    .paginationNumbers .page-item:nth-child(n+5):nth-child(-n+11) {
+        display: none;
+    }
+    /* ---------------- Forget Password Page CSS ---------------- */
+    .foegetPass-sec {
+        align-content: flex-start;
+        background-image: url(../images/forgot_password.png);
+        background-repeat: no-repeat;
+        background-position: bottom 8% center;
+        background-size: contain;
+        height: 100vh;
+        padding: 30px 0 0;
+    }
+    .forgetPassImgSec {
+        padding: 0 15px;
+    }
+    .forget-form {
+        padding: 25px;
+        top: 0;
+        left: 0;
+        min-width: auto;
+        transform: translate(0, 0);
+    }
+    .form2 h2 {
+        font-size: 1.2rem;
+    }
+    .forgetPassImgSec h2,
+    .form2 .verifyOTP {
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+    }
+    .form2 .form-label {
+        font-size: .8rem;
+    }
+    .form2 .form-control {
+        font-size: .9rem;
+        padding: .8rem;
+    }
+    .form2 .form-text {
+        margin-top: 0.3rem;
+    }
+    .form2 .btn-gr {
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
+    .login-sec {
+        padding: 50px 0 !important;
+    }
+    /* ---------------- Verify OTP Page CSS ---------------- */
+    .verifyOTP-sec .forget-form {
+        transform: translate(0, 0);
+    }
+    /* ---------------- Register New User Page CSS ---------------- */
+    .form1 .form-step-wrap .stapNum {
+        width: 32px;
+        height: 32px;
+        margin: 0 5px;
+    }
+    .form1 .form-step-wrap .stapNum.active {
+        width: 195px;
+        padding: 0px 15px;
+    }
+    .form1 .form-step-wrap {
+        font-size: 12px;
+        line-height: 32px;
+        padding: 0;
+    }
+    .form2 .form-control,
+    .form1 .form-select,
+    .form1 .date {
+        font-size: .9rem;
+    }
+     ::-webkit-calendar-picker-indicator {
+        background-position: right -3px center;
+    }
+    .registerNewUser-form {
+        padding: 35px 25px;
+    }
+    .form1 .terms .form-check-label {
+        font-size: .685rem;
+    }
+    .uploadWrap>.pd_text {
+        font-size: 1rem;
+        padding: 15px 46px;
+    }
+    .uploadWrap>.pd_text2 {
+        font-size: .7rem;
+    }
+    .uploadWrap {
+        align-items: start !important;
+        flex-flow: column;
+    }
+    .subCards>div:nth-child(2) {
+        transform: scale(1.04);
+    }
+    .imgWrap {
+        width: 135px;
+        height: 135px;
+    }
+    .textWrep {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 38px 0;
+    }
+    .appD-wrap>a {
+        padding: 10px;
+    }
+    .contect-up-wrep h1 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    .contect-up-wrep h3 {
+        font-size: 24px;
+        line-height: 43px;
+    }
+    .contect-up-wrep h3 svg {
+        height: 26px;
+        width: 26px;
+    }
+    .contect-up-wrep h4 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .cont-form {
+        padding: 35px 20px;
+    }
+    .contect-down-wrep h3 {
+        font-size: 26px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .contect-down-wrep>ul>li>a,
+    .contect-down-wrep>ul>li {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .bg-img {
+        max-width: 100%;
+    }
+    /* ---------------- Register Options Page CSS ---------------- */
+    .form3 .btn-gr2 {
+        font-size: 1rem;
+    }
+    .form3 .btn-signUp {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .form3 .btn-signUp>svg {
+        width: 20px;
+        height: 20px;
+        left: 11px;
+    }
+    .form3 .registerNewUser-form>h2 {
+        font-size: 18px;
+    }
+    /* ---------------- Payment Section Page css Start ---------------- */
+    .paymentSection {
+        font-size: 1rem;
+        padding: 25px 0;
+    }
+    .paymentSection>h2 {
+        font-size: 25px;
+        padding-left: 1.2rem;
+    }
+    .paymentSection .planCard-wrap>div>h5 {
+        font-size: 25px;
+    }
+    .paymentSection .planCard-wrap>div>h5>span,
+    .paymentSection .planCard-wrap>div>div>h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .paymentSection .paymentForm-wrap {
+        padding: 25px 15px;
+    }
+    .form4 .form-check-label>span {
+        padding-left: 15px;
+    }
+    .form4 .btn-gr2 {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 339.98px) {
+    .footer-heading {
+        padding-top: 1.8rem;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+    }
+    .top-header h1 {
+        font-size: 1.6rem;
+        line-height: 34px;
+    }
+    .p-cont,
+    .crt-acc-sec p {
+        font-size: .9rem;
+    }
+    .sec-heading,
+    .crt-acc-sec h2 {
+        line-height: 32px;
+        font-size: 1.3rem;
+    }
+    .form1 .form-step-wrap .stapNum.active {
+        width: 160px;
+        padding: 0px 10px;
+    }
+    #registerForm p,
+    .serchText h1 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container.con1 {
+        max-width: 1380px;
+    }
+    .container.con2 {
+        max-width: 1212px;
+    }
+    .container.con3 {
+        max-width: 1634px;
+    }
+    /* ---------------- Home Page CSS ---------------- */
+    /* top-header section css */
+    .bg-img1 {
+        left: 0;
+        bottom: -225px;
+    }
+    /* searchResult section css */
+    .searchResult-sec .gx-lg-5 {
+        --bs-gutter-x: 5rem;
+    }
+    .profile-nav {
+        padding-left: 55px;
+        padding-right: 255px;
+    }
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box !important;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+}
+
+small, h5, h6 {
+    font-weight: 400 !important;
+}
+
+/* ---------- navbar styles start ---------- */
+
+.navbar-custom {
+    min-height: 115px !important;
+    box-shadow: 0px 4px 4px rgba(42, 139, 242, 0.2);
+}
+
+.navbar-custom>.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-custom .topbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.button-menu-mobile {
+    border: none;
+    color: #323a46;
+    height: 70px;
+    line-height: 70px;
+    width: 60px;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    float: left;
+    z-index: 1;
+    position: relative;
+    margin-left: -24px;
+}
+
+.navbar-custom .topbar-menu li {
+    max-height: 100%;
+}
+
+.navbar-custom .nav-user {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.nav-user span {
+    display: inline-block;
+}
+
+.nav-user .account-user-avatar, .nav-user .account-user-avatar+span {
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+
+.nav-user .account-user-avatar img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-user .account-user-name {
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-left: 12px;
+}
+
+span.topnav-logo-sm>img {
+    height: 55px;
+}
+
+/* side nav style */
+
+.leftside-menu {
+    margin-top: 0 !important;
+}
+
+.side-nav li .side-nav-link {
+    color: #6c757d !important;
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 25px 30px;
+}
+
+body[data-layout=detached] .leftside-menu .side-nav .menuitem-active>a::before, body[data-layout=detached] .leftside-menu .side-nav .side-nav-item:hover>a::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 40px;
+    background: #0351FF;
+    box-shadow: 1px 0px 10px rgb(42 139 242 / 25%), 0px 0px 10px rgb(42 139 242 / 25%), 4px 0px 25px rgb(42 139 242 / 25%);
+    border-radius: 3px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer>.container-fluid .row>.col-md-6, .footer>.container-fluid .row>.col-md-6 a {
+    color: #8d8e9e !important;
+    font-weight: 300;
+}
+
+.footer .footer-links a {
+    margin-left: 2.5 rem;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 768.98px) {
+    .topnav-navbar-dark {
+        min-height: auto !important;
+    }
+    .home-search-btn {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .menuitem-active h3, .page-title-box .page-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media (max-width: 766.98px) {
+    .button-menu-mobile span {
+        background-color: #18277A;
+    }
+    .content {
+        padding-right: 0;
+    }
+    .home-search-btn {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    span.topnav-logo-sm>img {
+        height: 45px;
+    }
+    .dropdown-menu.dropdown-menu-end.dropdown-menu-animated.dropdown-lg.show {
+        min-width: 300px;
+    }
+    .home-search-btn {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .home-search-btn i.dripicons-search {
+        padding-right: 18px;
+        vertical-align: middle;
+    }
+    .nav-user .account-user-name {
+        padding-left: 0;
+    }
+    .nav-user .account-user-avatar img {
+        height: 45px;
+        width: 45px;
+    }
+    .nav-user .account-user-avatar, .nav-user .account-user-avatar+span {
+        top: 12px;
+    }
+    .chat-detail-section .card:nth-child(1) .card-body.p-0>.row .col-1>span>i, .chat-detail-section .card:nth-child(1) .card-body.p-0>.row .col-1>span>a {
+        display: block;
+        line-height: 36px;
+    }
+    .chat-detail-section .card:nth-child(1) .card-body.p-0>.row .col-1>span>a {
+        line-height: 38px;
+    }
+    .fc .fc-toolbar {
+        flex-flow: column-reverse;
+    }
+    .fc .fc-toolbar>div {
+        padding: 10px 0;
+    }
+    .content>.row.mt-4 {
+        margin-top: 0.25rem !important;
+    }
+}

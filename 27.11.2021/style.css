@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --color4: #212240;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.video-call-container {
+    height: 100vh;
+}
+
+.caller-name {
+    height: 84px;
+}
+
+.call-space {
+    height: calc(100vh - 184px);
+}
+
+.caller-name,
+.call-ctrl {
+    background-color: var(--color4);
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.caller-name h3 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.btn-vid {
+    width: 60px;
+    height: 60px;
+    margin: 0 25px;
+    background: linear-gradient(142.25deg, #7CB8F7 20.3%, #2A8BF2 74.69%);
+    text-align: center;
+    padding: 0;
+}
+
+.btn-vid:nth-child(3) {
+    background: linear-gradient(142.25deg, #E71616 20.3%, #B40606 74.69%);
+}
+
+.btn-vid svg {
+    width: 32px;
+}
+
+@media (max-width: 1199.98px) and (min-height: 768.98px) {
+    .call-space {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .caller-name,
+    .call-ctrl {
+        padding: 15px;
+        padding-left: 20px;
+    }
+    .caller-name {
+        height: 60px;
+    }
+    .caller-name h3 {
+        font-size: 24px;
+    }
+    .call-space {
+        height: calc(100vh - 140px);
+    }
+    .call-space {
+        flex-direction: column;
+    }
+    .btn-vid {
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+    }
+    .btn-vid svg {
+        width: 25px;
+    }
+}

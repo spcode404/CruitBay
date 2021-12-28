@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Recruiter - Search Result</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light login-nav border-bottom-0">
+        <div class="container con2">
+            <a class="navbar-brand" href="./index.html"><img src="assets/images/logo_blue.png" alt="CruitBay Inc. Logo"></a>
+            <button class="navbar-toggler" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="rgb(24, 39, 122)"
+                    class="bi bi-filter-right" viewBox="0 0 16 16">
+                    <path
+                        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+                </svg>
+            </button>
+            <div class="backdrop"></div>
+            <div class="mx-auto justify-content-center" id="navbarMob">
+                <div id="closeNav" class="d-lg-none d-md-inline p-3 position-absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"
+                            fill="#000" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item d-lg-none text-center my-5">
+                        <img src="assets/images/logo_blue.png" alt="CruitBay Inc. Logo">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Search Candidate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+    <!-- main start -->
+    <main>
+        <section class="searchResult-sec">
+            <div class="container con3 overflow-hidden">
+                <div class="row gx-lg-5 py-5">
+                    <div class="col-lg-4 col-xxl-3 user-select-none">
+                        <div class="filters-Wrap shadow">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3>
+                                    <span style="vertical-align: 1px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            fill="var(--color2)" class="bi bi-funnel" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
+                                        </svg>
+                                    </span> Filters
+                                </h3>
+                                <a href="#">Clear All</a>
+                            </div>
+                            <div class="accordion accordion-flush filters-collapse">
+                                <!-- Location Filter -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="locationFilter">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#locationFlt" aria-expanded="true" aria-controls="locationFlt">
+                                            Location
+                                        </button>
+                                    </h2>
+                                    <div id="locationFlt" class="accordion-collapse collapse show" aria-labelledby="locationFilter">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Delaware" id="delaware">
+                                                <label class="form-check-label" for="delaware">
+                                                    Delaware
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Utah" id="utah">
+                                                <label class="form-check-label" for="utah">
+                                                    Utah
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Pennsylvania" id="pennsylvania">
+                                                <label class="form-check-label" for="pennsylvania">
+                                                    Pennsylvania
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="New York" id="newYork">
+                                                <label class="form-check-label" for="newYork">
+                                                    New York
+                                                </label>
+                                            </div>
+                                            <div class="moreFtl">
+                                                <a href="#">+20 more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Location Filter end -->
+                                <!-- Education Filter -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="educationFilter">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#educationFlt" aria-expanded="true" aria-controls="educationFlt">
+                                            Education
+                                        </button>
+                                    </h2>
+                                    <div id="educationFlt" class="accordion-collapse collapse show" aria-labelledby="educationFilter">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Post Graduate" id="pg">
+                                                <label class="form-check-label" for="pg">
+                                                    Post Graduate
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="M. Tech/MCA" id="mca">
+                                                <label class="form-check-label" for="mca">
+                                                    M. Tech/MCA
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="M.Sc" id="mSc">
+                                                <label class="form-check-label" for="mSc">
+                                                    M.Sc
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Any Graduate" id="ag">
+                                                <label class="form-check-label" for="ag">
+                                                    Any Graduate
+                                                </label>
+                                            </div>
+                                            <div class="moreFtl">
+                                                <a href="#">+10 more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Education Filter End -->
+                                <!-- Experience Filter -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="experienceFilter">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#experienceFlt" aria-expanded="true" aria-controls="experienceFlt">
+                                            Experience
+                                        </button>
+                                    </h2>
+                                    <div id="experienceFlt" class="accordion-collapse collapse show" aria-labelledby="experienceFilter">
+                                        <div class="accordion-body">
+                                            <div class="range-slider">
+                                                <input type="range" id="rs-range-line" value="0" min="0" max="30">
+                                                <div id="selector">
+                                                    <div class="selectBtn"></div>
+                                                    <div id="selectValue">
+                                                    </div>
+                                                    <span class="output"></span>
+                                                </div>
+                                                <div class="pBar"></div>
+                                            </div>
+
+                                            <div class="box-minmax">
+                                                <span>0 Years</span><span>Any</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Experience Filter End-->
+                                <!-- Industry Filter-->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="industryFilter">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#industryFlt" aria-expanded="true" aria-controls="industryFlt">
+                                            Industry
+                                        </button>
+                                    </h2>
+                                    <div id="industryFlt" class="accordion-collapse collapse show" aria-labelledby="industryFilter">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="IT Services & Consulting" id="itServices">
+                                                <label class="form-check-label" for="itServices">
+                                                    IT Services &amp; Consulting
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Recruitment / Staffing" id="staffing">
+                                                <label class="form-check-label" for="staffing">
+                                                    Recruitment / Staffing
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Advertising & Marketing" id="advertising">
+                                                <label class="form-check-label" for="advertising">
+                                                    Advertising &amp; Marketing
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Miscellaneous" id="miscellaneous">
+                                                <label class="form-check-label" for="miscellaneous">
+                                                    Miscellaneous
+                                                </label>
+                                            </div>
+                                            <div class="moreFtl">
+                                                <a href="#">+10 more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Industry Filter End-->
+                                <!-- Sub-Industry Filter -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="subIndustryFilter">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#subIndustryFlt" aria-expanded="true" aria-controls="subIndustryFlt">
+                                            Sub-Industry
+                                        </button>
+                                    </h2>
+                                    <div id="subIndustryFlt" class="accordion-collapse collapse show" aria-labelledby="subIndustryFilter">
+                                        <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Post Graduate" id="pg1">
+                                                <label class="form-check-label" for="pg1">
+                                                    Post Graduate
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="M. Tech/MCA" id="mca1">
+                                                <label class="form-check-label" for="mca1">
+                                                    M. Tech/MCA
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="M.Sc" id="mSc1">
+                                                <label class="form-check-label" for="mSc1">
+                                                    M.Sc
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Any Graduate" id="ag1">
+                                                <label class="form-check-label" for="ag1">
+                                                    Any Graduate
+                                                </label>
+                                            </div>
+                                            <div class="moreFtl">
+                                                <a href="#">+10 more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sub-Industry Filter End-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xxl-7">
+                        <form action="#" method="get">
+                            <div class="input-group mb-3 shadow searchBox">
+                                <span class="input-group-text border-0">
+                                    <img src="assets/images/icons/search-outline.png" alt="search-outline">
+                                </span>
+                                <input type="search" class="form-control border-0" placeholder="Search">
+                                <button type="submit" class="btn blueBtn my-0 px-5 border-0">Search</button>
+                            </div>
+
+                        </form>
+                        <div class="dropdown d-flex justify-content-between align-items-center sortBy">
+                            <h5 class="d-block d-lg-none user-select-none" id="filter-md-btn" style="cursor: pointer;">
+                                <span style="vertical-align: 1px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="var(--color2)"
+                                        class="bi bi-funnel" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
+                                    </svg>
+                                </span> Filters
+                            </h5>
+                            <div class="ms-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="var(--color2)" class="bi bi-filter-left" viewBox="0 0 16 16" style="transform: scale(.8, 1.3);">
+                                    <path
+                                        d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                </svg> Sort By:
+                                <button class="btn" type="button" id="sortByFlt" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Relevence
+                                </button>
+                                <ul class="dropdown-menu shadow border-0" aria-labelledby="sortByFlt">
+                                    <li><a class="dropdown-item" href="#">One</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="resultWrap">
+
+                            <div class="row gx-0 my-4 shadow rounded-2 candidateCard">
+                                <div class="boostedCandidate rounded-pill text-center">
+                                    <img src="assets/images/icons/rocket-boosted.png" alt="rocket-boosted"> Boosted Candidate
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="candidateImg">
+                                        <img class="rounded-circle" src="https://secure.gravatar.com/avatar/151df8444c1f48a8893f89a31397029e?s=96&d=mm&r=g" alt="Anthony">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-10 col-md-6 col-sm-10 candidateInfo">
+                                    <h2>Anthony</h2>
+                                    <ul class="list-unstyled">
+                                        <li>Sr. Designer</li>
+                                        <li>3+ Years Experience</li>
+                                    </ul>
+                                    <div class="work-status ready">Ready to work</div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-2 col-md-4 offset-md-0 col-sm-10 offset-sm-2 candidateSkills align-self-end">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Figma</li>
+                                        <li>Wireframing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row gx-0 my-4 shadow rounded-2 candidateCard">
+                                <div class="boostedCandidate rounded-pill text-center">
+                                    <img src="assets/images/icons/rocket-boosted.png" alt="rocket-boosted"> Boosted Candidate
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="candidateImg">
+                                        <img class="rounded-circle" src="https://secure.gravatar.com/avatar/151df8444c1f48a8893f89a31397029e?s=96&d=mm&r=g" alt="Emma">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-10 col-md-6 col-sm-10 candidateInfo">
+                                    <h2>Emma</h2>
+                                    <ul class="list-unstyled">
+                                        <li>UI Designer</li>
+                                        <li>3+ Years Experience</li>
+                                    </ul>
+                                    <div class="work-status ready">Ready to work</div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-2 col-md-4 offset-md-0 col-sm-10 offset-sm-2 candidateSkills align-self-end">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Figma</li>
+                                        <li>Wireframing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row gx-0 my-4 shadow rounded-2 candidateCard">
+                                <div class="boostedCandidate rounded-pill text-center">
+                                    <img src="assets/images/icons/rocket-boosted.png" alt="rocket-boosted"> Boosted Candidate
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="candidateImg">
+                                        <img class="rounded-circle" src="https://secure.gravatar.com/avatar/151df8444c1f48a8893f89a31397029e?s=96&d=mm&r=g" alt="Sara">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-10 col-md-6 col-sm-10 candidateInfo">
+                                    <h2>Sara</h2>
+                                    <ul class="list-unstyled">
+                                        <li>Freelance Designer</li>
+                                        <li>3+ Years Experience</li>
+                                    </ul>
+                                    <div class="work-status working">Currently working</div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-2 col-md-4 offset-md-0 col-sm-10 offset-sm-2 candidateSkills align-self-end">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Figma</li>
+                                        <li>Wireframing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row gx-0  my-4 shadow rounded-2 candidateCard">
+                                <div class="col-sm-2">
+                                    <div class="candidateImg">
+                                        <img class="rounded-circle" src="https://secure.gravatar.com/avatar/151df8444c1f48a8893f89a31397029e?s=96&d=mm&r=g" alt="James">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-10 col-md-6 col-sm-10 candidateInfo">
+                                    <h2>James</h2>
+                                    <ul class="list-unstyled">
+                                        <li>Sr. Designer</li>
+                                        <li>3+ Years Experience</li>
+                                    </ul>
+                                    <div class="work-status seeking">Currently working but seeking more opportunities</div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-2 col-md-4 offset-md-0 col-sm-10 offset-sm-2 candidateSkills align-self-end">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Figma</li>
+                                        <li>Wireframing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row gx-0 my-4 shadow rounded-2 candidateCard">
+                                <div class="col-sm-2">
+                                    <div class="candidateImg">
+                                        <img class="rounded-circle" src="https://secure.gravatar.com/avatar/151df8444c1f48a8893f89a31397029e?s=96&d=mm&r=g" alt="Robert">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-10 col-md-6 col-sm-10 candidateInfo">
+                                    <h2>Robert</h2>
+                                    <ul class="list-unstyled">
+                                        <li>Sr. Designer</li>
+                                        <li>3+ Years Experience</li>
+                                    </ul>
+                                    <div class="work-status ready">Ready to work</div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-2 col-md-4 offset-md-0 col-sm-10 offset-sm-2 candidateSkills align-self-end">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Figma</li>
+                                        <li>Wireframing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row gx-0 my-4 shadow rounded-2 candidateCard">
+                                <div class="col-sm-2">
+                                    <div class="candidateImg">
+                                        <img class="rounded-circle" src="https://secure.gravatar.com/avatar/151df8444c1f48a8893f89a31397029e?s=96&d=mm&r=g" alt="Anthony">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-10 col-md-6 col-sm-10 candidateInfo">
+                                    <h2>Christopher</h2>
+                                    <ul class="list-unstyled">
+                                        <li>Sr. Designer</li>
+                                        <li>3+ Years Experience</li>
+                                    </ul>
+                                    <div class="work-status seeking">Currently working but seeking more opportunities</div>
+                                </div>
+                                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-2 col-md-4 offset-md-0 col-sm-10 offset-sm-2 candidateSkills align-self-end">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Figma</li>
+                                        <li>Wireframing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Pagination start -->
+                        <nav aria-label="Page navigation" class="paginationNumbers my-5 pt-5">
+                            <ul class="pagination justify-content-between align-items-center">
+                                <!-- Previous button -->
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <!-- Pagination number -->
+
+                                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <!-- Next Button -->
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Pagination end -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main Ends -->
+    <!-- footer start -->
+    <footer class="footer py-5">
+        <div class="container con2">
+            <div class="row">
+                <div class="col-md-6 col-xl-4 align-self-center text-md-start text-center">
+                    <a href="./index.html" class="d-inline-block footer-brand">
+                        <img src="assets/images/logo_white.png" alt="CruitBay Inc. Logo">
+                        <p class="mb-0 mt-4 text-center">CRUITBAY</p>
+                    </a>
+
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <h2 class="footer-heading">get in touch</h2>
+                    <ul class="conInfo">
+                        <li>
+                            <a href="#">US: +1 (123) 456 7890</a>
+                        </li>
+                        <li>
+                            <a href="#">EU: +45 (243) 456 4578</a>
+                        </li>
+                        <li>
+                            <a href="#">info@cruitbay.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <h2 class="footer-heading">connect on social</h2>
+                    <ul class="conSocial d-flex align-items-center justify-content-xl-center">
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/linkedin.png" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icons/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-r d-flex flex-wrap-reverse justify-content-md-between justify-content-center">
+                <div>All rights recived © 2021 CruitBay Inc.</div>
+                <ul class="d-flex tarmsWrap">
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Accesiblity</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+
+</body>
+
+</html>
